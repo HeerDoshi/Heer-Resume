@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #c8e6c9, #b3e5fc);
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
+
+    .navbar-custom {
+      background-color: #ffffffcc;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      backdrop-filter: blur(10px);
+      z-index: 2;
+    }
+
+    .navbar-nav .nav-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #007bff;
+      left: 0;
+      bottom: 0;
+      transition: 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .social-navbar-icons a {
+      color: #333;
+      margin-left: 15px;
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-navbar-icons a:hover {
+      color: #007bff;
+      transform: scale(1.2);
+      text-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #64b5f6, #81c784);
+      padding: 100px 20px 60px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-section h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 64px;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .resume-container {
+      position: relative;
+      background: #ffffffdd;
+      background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a1a1a;
+      margin-bottom: 30px;
+      font-family: 'Sacramento', cursive;
+      font-size: 48px;
+    }
+
+    h2 {
+      background-color: #e3f2fd;
+      border-left: 6px solid #4dd0e1;
+      padding: 10px 15px;
+      border-radius: 12px;
+      margin-top: 30px;
+      font-size: 22px;
+      color: #333;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    h2:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(77, 208, 225, 0.4);
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Resume</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#academic">Academic</a></li>
+          <li class="nav-item"><a class="nav-link" href="#non-academic">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        </ul>
+        <div class="social-navbar-icons d-flex align-items-center">
+          <a href="mailto:Heer6310@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/_heerdoshi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.snapchat.com/add/heerdoshi_10" target="_blank"><i class="fab fa-snapchat"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Heer Doshi</h1>
+      <p class="lead">Creative Mind | Puzzle Solver | Aspiring Entrepreneur</p>
+      <p class="small">Welcome to my digital resume — a space where creativity meets ambition.</p>
+    </div>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+      <path fill="#ffffff" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,208C640,213,800,171,960,144C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
+  </section>
+
+  <!-- Resume Content -->
+  <div class="resume-container">
+    <h1>Resume</h1>
+    <p><span class="label">Name:</span> Heer Doshi</p>
+    <p><span class="label">Age:</span> 19 years</p>
+    <p><span class="label">Address:</span><br>
+      Kalpak Doshi<br>
+      4 Shivsangam Society, B’low No. 139<br>
+      B/h Reliance Jio<br>
+      Rajkot, 360007
+    </p>
+    <p><span class="label">Mobile No.:</span> 9409725000</p>
+    <p><span class="label">Mail ID:</span> <a href="mailto:Heer6310@gmail.com">Heer6310@gmail.com</a></p>
+
+    <div id="languages" class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li>English</li>
+        <li>Gujarati</li>
+        <li>Hindi</li>
+      </ul>
+    </div>
+
+    <div id="academic" class="section">
+      <h2>Academic Profile</h2>
+      <ul>
+        <li>Completed 12th std from Saint Paul’s School, Rajkot, 2024</li>
+        <li>Currently pursuing BBA in Digital Business and Entrepreneurship from IIM Bangalore</li>
+      </ul>
+    </div>
+
+    <div id="non-academic" class="section">
+      <h2>Non-Academic Profile</h2>
+      <h3>Skills:</h3>
+      <ul>
+        <li>Puzzle Solving</li>
+        <li>Drawing and Painting</li>
+        <li>Art and Craft</li>
+      </ul>
+      <h3>Hobbies:</h3>
+      <ul>
+        <li>Travelling</li>
+        <li>Dancing</li>
+        <li>Reading</li>
+      </ul>
+    </div>
+
+    <div id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Solved 32,000-piece jigsaw puzzle – featured in Limca Book of Records, 2022</li>
+        <li>1st Prize at JQA International Drawing and Painting Competition, Japan</li>
+        <li>Silver Prize at EI-NO-HIKARI Drawing and Painting Competition, Japan</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
